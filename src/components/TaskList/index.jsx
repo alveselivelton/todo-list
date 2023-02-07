@@ -1,5 +1,5 @@
 import useTaskStore from "../../app/taskStore";
-import { Container, Content, OptionsConteiner } from "./styles";
+import { Container, Content, OptionsConteiner, Button } from "./styles";
 import { BsFillBookmarkCheckFill, BsTrashFill } from "react-icons/bs";
 
 const TaskList = () => {
@@ -13,11 +13,16 @@ const TaskList = () => {
         tasks.map((task) => (
           <Content key={task.id} completed={task.completed}>
             <p>{task.name}</p>
-            <OptionsConteiner completed={task.completed}>
-              <BsFillBookmarkCheckFill
+            <OptionsConteiner>
+              <Button
+                completed={task.completed}
                 onClick={() => toggleTaskStatus(task.id)}
-              />
-              <BsTrashFill id="delete" onClick={() => removeTask(task.id)} />
+              >
+                <BsFillBookmarkCheckFill />
+              </Button>
+              <Button onClick={() => removeTask(task.id)}>
+                <BsTrashFill />
+              </Button>
             </OptionsConteiner>
           </Content>
         ))}

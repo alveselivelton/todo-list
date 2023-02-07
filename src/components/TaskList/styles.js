@@ -21,13 +21,11 @@ export const Content = styled.div`
 export const OptionsConteiner = styled.div`
   display: flex;
   gap: 15px;
+`;
+
+export const Button = styled.button`
+  color: ${({ completed }) => (completed ? "#32CD32" : "#fff")};
+  background-color: transparent;
+  border: none;
   font-size: 18px;
-
-  svg {
-    color: ${({ completed }) => (completed ? "#32CD32" : "#fff")};
-  }
-
-  #delete {
-    color: #fff;
-  }
 `;
