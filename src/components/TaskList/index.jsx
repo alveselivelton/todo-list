@@ -15,7 +15,6 @@ const TaskList = () => {
             <p>{task.name}</p>
             <OptionsConteiner completed={task.completed}>
               <BsFillBookmarkCheckFill
-                id="check"
                 onClick={() => toggleTaskStatus(task.id)}
               />
               <BsTrashFill id="delete" onClick={() => removeTask(task.id)} />

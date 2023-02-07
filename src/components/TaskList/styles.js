@@ -23,27 +23,11 @@ export const OptionsConteiner = styled.div`
   gap: 15px;
   font-size: 18px;
 
-  #check {
+  svg {
     color: ${({ completed }) => (completed ? "#32CD32" : "#fff")};
-    transition: 0.3s;
-    cursor: pointer;
-
-    &:hover {
-      color: #228b22;
-
-      @media (max-width: 500px) {
-        color: #32cd32;
-      }
-    }
   }
 
   #delete {
     color: #fff;
-    transition: 0.3s;
-    cursor: pointer;
-
-    &:hover {
-      color: #cd5c5c;
-    }
   }
 `;
