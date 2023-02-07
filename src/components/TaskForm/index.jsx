@@ -9,6 +9,9 @@ const TaskForm = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+
+    if (!task) return;
+
     addTask({
       id: Math.ceil(Math.random() * 1000000),
       name: task,

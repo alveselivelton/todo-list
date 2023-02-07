@@ -14,7 +14,6 @@ export const GlobalStyle = createGlobalStyle`
     padding: 15px;
     display: flex;
     justify-content: center;
-    align-items: center;
     background-color: #141517;
     color: #fff;
   }

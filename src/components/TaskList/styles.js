@@ -30,6 +30,10 @@ export const OptionsConteiner = styled.div`
 
     &:hover {
       color: #228b22;
+
+      @media (max-width: 500px) {
+        color: #32cd32;
+      }
     }
   }
 

@@ -53,5 +53,6 @@ export const Button = styled.button`
     margin: 0 auto;
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
+    opacity: 1;
   }
 `;
