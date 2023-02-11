@@ -25,6 +25,7 @@ const TaskForm = () => {
       <Form onSubmit={handleSubmit}>
         <Input
           type="text"
+          placeholder="O que você vai fazer?"
           value={task}
           onChange={(e) => setTask(e.target.value)}
         ></Input>
